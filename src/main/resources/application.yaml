@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:users
+    username: test
+    password: 12345
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+
+jwt:
+  secret: 3CfnSetLm1AArokp4brHEw+GfYKyqdht6KSiG1bgwcM=
+
+users:
+  password_regex: ".{3,}"
